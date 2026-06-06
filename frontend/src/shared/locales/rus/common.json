@@ -1,6 +1,8 @@
 {
-    "welcome": "Добро пожаловать",
-    "save": "Сохранить",
-    "cancel": "Отменить",
-    "delete": "Удалить"
+    "companyPortal": "Портал компании",
+    "home": "Главная",
+    "employeeManagement": "Управление сотрудниками",
+    "projectManagement": "Управление проектами",
+    "welcomeToCompanyPortal": "Добро пожаловать на портал компании",
+    "chooseASectionFromTheNavigationAboveToGetStarted": "Выберите раздел в навигации выше, чтобы начать."
 }

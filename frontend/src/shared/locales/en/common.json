@@ -1,6 +1,8 @@
 {
-    "welcome": "Welcome",
-    "save": "Save",
-    "cancel": "Cancel",
-    "delete": "Delete"
+    "companyPortal": "Company Portal",
+    "home": "Home",
+    "employeeManagement": "Employee Management",
+    "projectManagement": "Project Management",
+    "welcomeToCompanyPortal": "Welcome to Company Portal",
+    "gettingStarted": "Choose a section from the navigation above to get started."
 }

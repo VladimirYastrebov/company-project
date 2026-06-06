@@ -1,6 +1,8 @@
 {
-    "welcome": "Bienvenue",
-    "save": "Enregistrer",
-    "cancel": "Annuler",
-    "delete": "Supprimer"
+    "companyPortal": "Portail de la Compagnie",
+    "home": "Accueil",
+    "employeeManagement": "Gestion des Employés",
+    "projectManagement": "Gestion des Projets",
+    "welcomeToCompanyPortal": "Bienvenue sur le Portail de la Compagnie",
+    "chooseASectionFromTheNavigationAboveToGetStarted": "Choisissez une section dans la navigation ci-dessus pour commencer."
 }
