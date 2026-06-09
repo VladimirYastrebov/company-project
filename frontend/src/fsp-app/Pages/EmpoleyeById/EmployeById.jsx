@@ -14,6 +14,8 @@ import {
     CheckCircle,
     XCircle,
 } from "lucide-react";
+import "../shared/i18n";
+import i18n from "../shared/i18n";
 
 export const EmployeById = () => {
     const { id } = useParams();
@@ -31,7 +33,7 @@ export const EmployeById = () => {
                 const foundEmployee = response.data.find((item) => String(item.id) === String(id));
                 setEmployee(foundEmployee || null);
             } catch {
-                setError("Failed to load employee data.");
+                setError(i18n.t("errorFetchEmployee"));
             } finally {
                 setIsLoading(false);
             }
@@ -44,7 +46,7 @@ export const EmployeById = () => {
         return (
             <div className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center px-4">
                 <div className="w-full max-w-xl rounded-2xl border border-slate-800 bg-slate-900/80 p-8 text-center">
-                    <p className="text-lg text-slate-300">Loading employee...</p>
+                    <p className="text-lg text-slate-300">{i18n.t("employeeLoading")}</p>
                 </div>
             </div>
         );
@@ -60,7 +62,7 @@ export const EmployeById = () => {
                         className="mt-6 inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-500"
                     >
                         <ArrowLeft className="h-4 w-4" />
-                        <span className="ml-1.5">Back to employees</span>
+                        <span className="ml-1.5">{i18n.t("backToEmployeeList")}</span>
                     </Link>
                 </div>
             </div>
@@ -71,14 +73,16 @@ export const EmployeById = () => {
         return (
             <div className="min-h-screen bg-slate-950 text-slate-100 flex items-center justify-center px-4">
                 <div className="w-full max-w-xl rounded-2xl border border-slate-800 bg-slate-900/80 p-8">
-                    <h2 className="text-3xl font-semibold">Employee not found</h2>
-                    <p className="mt-3 text-slate-300">No employee exists with id: {id}</p>
+                    <h2 className="text-3xl font-semibold">{i18n.t("employeeNotFound")}</h2>
+                    <p className="mt-3 text-slate-300">
+                        {i18n.t("employeeNotFoundMessage", { id })}
+                    </p>
                     <Link
                         to="/fsp"
                         className="mt-6 inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white transition hover:bg-blue-500"
                     >
                         <ArrowLeft className="h-4 w-4" />
-                        <span className="ml-1.5">Back to employees</span>
+                        <span className="ml-1.5">{i18n.t("backToEmployeeList")}</span>
                     </Link>
                 </div>
             </div>
@@ -100,7 +104,7 @@ export const EmployeById = () => {
                         className="inline-flex items-center gap-1.5 text-blue-400 font-semibold transition hover:text-blue-300"
                     >
                         <ArrowLeft className="h-4 w-4" />
-                        Back to employees
+                        {i18n.t("backToEmployeeList")}
                     </Link>
                     <div className="hidden items-center gap-3 text-slate-400 sm:flex">
                         <span className="inline-flex items-center gap-1.5">
@@ -122,7 +126,7 @@ export const EmployeById = () => {
                     <div className="mb-4 flex items-center justify-center gap-1.5 text-slate-200">
                         <Users className="h-5 w-5 text-blue-300" />
                         <span className="text-sm font-medium tracking-wide">
-                            SMTH Employee Manager
+                            {i18n.t("employeeManager")}
                         </span>
                     </div>
                     <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-blue-700/50 text-5xl font-bold text-slate-100 ring-1 ring-blue-500/50">
@@ -130,14 +134,14 @@ export const EmployeById = () => {
                     </div>
 
                     <h2 className="mt-6 text-center text-4xl font-bold tracking-tight">
-                        Employee Details
+                        {i18n.t("employeeDetails")}
                     </h2>
 
                     <div className="mt-8 space-y-4">
                         <div className="grid grid-cols-[1fr_auto] items-center rounded-xl border border-slate-800 bg-slate-900/80 px-5 py-4">
                             <p className="inline-flex items-center gap-1.5 text-slate-400">
                                 <IdCard className="h-4 w-4 text-slate-400" />
-                                ID
+                                {i18n.t("id")}
                             </p>
                             <p className="text-lg font-medium text-slate-100">{employee.id}</p>
                         </div>
@@ -145,7 +149,7 @@ export const EmployeById = () => {
                         <div className="grid grid-cols-[1fr_auto] items-center rounded-xl border border-slate-800 bg-slate-900/80 px-5 py-4">
                             <p className="inline-flex items-center gap-1.5 text-slate-400">
                                 <User className="h-4 w-4 text-slate-400" />
-                                Name
+                                {i18n.t("name")}
                             </p>
                             <p className="text-lg font-medium text-slate-100">{employee.name}</p>
                         </div>
@@ -153,7 +157,7 @@ export const EmployeById = () => {
                         <div className="grid grid-cols-[1fr_auto] items-center rounded-xl border border-slate-800 bg-slate-900/80 px-5 py-4">
                             <p className="inline-flex items-center gap-1.5 text-slate-400">
                                 <DollarSign className="h-4 w-4 text-blue-300" />
-                                Salary
+                                {i18n.t("salary")}
                             </p>
                             <p className="text-3xl font-bold text-blue-400">${formattedSalary}</p>
                         </div>
@@ -161,7 +165,7 @@ export const EmployeById = () => {
                         <div className="grid grid-cols-[1fr_auto] items-center rounded-xl border border-slate-800 bg-slate-900/80 px-5 py-4">
                             <p className="inline-flex items-center gap-1.5 text-slate-400">
                                 <TrendingUp className="h-4 w-4 text-slate-400" />
-                                Salary increase status
+                                {i18n.t("salaryIncreaseStatus")}
                             </p>
                             <div className="flex items-center gap-2">
                                 <p
@@ -187,7 +191,7 @@ export const EmployeById = () => {
                         className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-blue-600 px-5 py-4 text-lg font-semibold text-white transition hover:bg-blue-500"
                     >
                         <ArrowLeft className="h-5 w-5" />
-                        <span className="ml-1.5">Back to employees</span>
+                        <span className="ml-1.5">{i18n.t("backToEmployeeList")}</span>
                     </Link>
                 </section>
             </div>

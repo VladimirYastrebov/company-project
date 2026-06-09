@@ -6,5 +6,16 @@
     "welcomeToCompanyPortal": "Добро пожаловать на портал компании",
     "gettingStarted": "Выберите раздел в навигации выше, чтобы начать.",
     "errorDeleteEmployee": "Ошибка при удалении сотрудника:",
-    "errorUpdateEmployee": "Ошибка при обновлении статуса сотрудника:"
+    "errorUpdateEmployee": "Ошибка при обновлении статуса сотрудника:",
+    "errorFetchEmployee": "Ошибка при получении данных сотрудника:",
+    "employeeLoading": "Загрузка данных сотрудника...",
+    "backToEmployeeList": "Вернуться к списку сотрудников",
+    "employeeNotFound": "Сотрудник не найден",
+    "employeeNotFoundMessage": "Сотрудник с ID {id} не существует",
+    "employeeDetails": "Детали сотрудника",
+    "employeeManager": "Менеджер сотрудников",
+    "id": "ID",
+    "name": "Имя",
+    "salary": "Зарплата",
+    "salaryIncreaseStatus": "Статус повышения зарплаты"
 }

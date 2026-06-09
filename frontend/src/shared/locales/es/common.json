@@ -6,5 +6,16 @@
     "welcomeToCompanyPortal": "Bienvenido al Portal de la Compañía",
     "gettingStarted": "Elija una sección desde la navegación anterior para comenzar.",
     "errorDeleteEmployee": "Error al eliminar el empleado:",
-    "errorUpdateEmployee": "Error al actualizar el estado del empleado:"
+    "errorUpdateEmployee": "Error al actualizar el estado del empleado:",
+    "errorFetchEmployee": "Error al obtener los datos del empleado:",
+    "employeeLoading": "Cargando datos del empleado...",
+    "backToEmployeeList": "Volver a la Lista de Empleados",
+    "employeeNotFound": "Empleado no encontrado",
+    "employeeNotFoundMessage": "No existe un empleado con el id: {id}",
+    "employeeDetails": "Detalles del Empleado",
+    "employeeManager": "Gerente de Empleados",
+    "id": "ID",
+    "name": "Nombre",
+    "salary": "Salario",
+    "salaryIncreaseStatus": "Estado de aumento de salario"
 }

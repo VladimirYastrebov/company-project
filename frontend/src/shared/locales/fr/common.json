@@ -6,5 +6,16 @@
     "welcomeToCompanyPortal": "Bienvenue sur le Portail de la Compagnie",
     "gettingStarted": "Choisissez une section dans la navigation ci-dessus pour commencer.",
     "errorDeleteEmployee": "Erreur lors de la suppression de l'employé:",
-    "errorUpdateEmployee": "Erreur lors de la mise à jour du statut de l'employé:"
+    "errorUpdateEmployee": "Erreur lors de la mise à jour du statut de l'employé:",
+    "errorFetchEmployee": "Erreur lors de la récupération des données de l'employé:",
+    "employeeLoading": "Chargement des données de l'employé...",
+    "backToEmployeeList": "Retour à la Liste des Employés",
+    "employeeNotFound": "Employé non trouvé",
+    "employeeNotFoundMessage": "Aucun employé n'existe avec l'ID: {id}",
+    "employeeDetails": "Détails de l'Employé",
+    "employeeManager": "Gestionnaire des Employés",
+    "id": "ID",
+    "name": "Nom",
+    "salary": "Salaire",
+    "salaryIncreaseStatus": "État de l'augmentation du salaire"
 }

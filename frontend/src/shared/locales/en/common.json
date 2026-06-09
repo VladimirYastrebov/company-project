@@ -6,5 +6,16 @@
     "welcomeToCompanyPortal": "Welcome to Company Portal",
     "gettingStarted": "Choose a section from the navigation above to get started.",
     "errorDeleteEmployee": "Error deleting employee:",
-    "errorUpdateEmployee": "Error updating employee status:"
+    "errorUpdateEmployee": "Error updating employee status:",
+    "errorFetchEmployee": "Error fetching employee data:",
+    "employeeLoading": "Loading employee data...",
+    "backToEmployeeList": "Back to Employee List",
+    "employeeNotFound": "Employee not found",
+    "employeeNotFoundMessage": "No employee exists with id: {id}",
+    "employeeDetails": "Employee Details",
+    "employeeManager": "Employee Manager",
+    "id": "ID",
+    "name": "Name",
+    "salary": "Salary",
+    "salaryIncreaseStatus": "Salary increase status"
 }
