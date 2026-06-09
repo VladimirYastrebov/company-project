@@ -4,5 +4,7 @@
     "employeeManagement": "Employee Management",
     "projectManagement": "Project Management",
     "welcomeToCompanyPortal": "Welcome to Company Portal",
-    "gettingStarted": "Choose a section from the navigation above to get started."
+    "gettingStarted": "Choose a section from the navigation above to get started.",
+    "errorDeleteEmployee": "Error deleting employee:",
+    "errorUpdateEmployee": "Error updating employee status:"
 }

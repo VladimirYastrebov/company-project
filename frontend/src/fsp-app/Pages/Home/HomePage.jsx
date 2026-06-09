@@ -5,6 +5,8 @@ import { NewEmployee } from "../../components/NewEmployee.jsx";
 import getBackendData, { FSP_API } from "../../index.js";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "../shared/i18n";
+import i18n from "../shared/i18n";
 
 export const HomePage = () => {
     const [allEmployesState, setEmployes] = useState([]);
@@ -36,7 +38,7 @@ export const HomePage = () => {
                 setHigherSalary((prev) => prev.filter((emp) => emp.id !== id));
             })
             .catch((error) => {
-                console.error("Error deleting employee:", error);
+                console.error(i18n.t("errorDeleteEmployee"), error);
             });
     }
 
@@ -56,7 +58,7 @@ export const HomePage = () => {
                 }
             })
             .catch((error) => {
-                console.error("Error updating employee status:", error);
+                console.error(i18n.t("errorUpdateEmployee"), error);
             });
     }
     return (

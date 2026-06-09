@@ -4,5 +4,7 @@
     "employeeManagement": "Управление сотрудниками",
     "projectManagement": "Управление проектами",
     "welcomeToCompanyPortal": "Добро пожаловать на портал компании",
-    "gettingStarted": "Выберите раздел в навигации выше, чтобы начать."
+    "gettingStarted": "Выберите раздел в навигации выше, чтобы начать.",
+    "errorDeleteEmployee": "Ошибка при удалении сотрудника:",
+    "errorUpdateEmployee": "Ошибка при обновлении статуса сотрудника:"
 }

@@ -4,5 +4,7 @@
     "employeeManagement": "Gestion des Employés",
     "projectManagement": "Gestion des Projets",
     "welcomeToCompanyPortal": "Bienvenue sur le Portail de la Compagnie",
-    "gettingStarted": "Choisissez une section dans la navigation ci-dessus pour commencer."
+    "gettingStarted": "Choisissez une section dans la navigation ci-dessus pour commencer.",
+    "errorDeleteEmployee": "Erreur lors de la suppression de l'employé:",
+    "errorUpdateEmployee": "Erreur lors de la mise à jour du statut de l'employé:"
 }
