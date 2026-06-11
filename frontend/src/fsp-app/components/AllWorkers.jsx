@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, DollarSign, Gift, Trash2, User, XCircle } from "lucide-react";
+import "../shared/i18n";
+import i18n from "../shared/i18n";
 
 function renderEmployeeCard(employe, delEmploye, upSalary) {
     const salaryValue = Number(employe.salary);
@@ -20,13 +22,13 @@ function renderEmployeeCard(employe, delEmploye, upSalary) {
                     >
                         {employe.name}
                     </Link>
-                    <p className="mt-1 text-slate-400">ID: {employe.id}</p>
+                    <p className="mt-1 text-slate-400">{i18n.t("id")}: {employe.id}</p>
                 </div>
             </div>
             <div>
                 <p className="mt-1 inline-flex items-center gap-1.5 text-slate-400">
                     <DollarSign className="h-4 w-4 text-blue-300" />
-                    Salary
+                    {i18n.t("salary")}
                 </p>
                 <p className="text-3xl font-bold text-blue-400">${salaryToShow}</p>
                 <p
@@ -41,7 +43,7 @@ function renderEmployeeCard(employe, delEmploye, upSalary) {
                     ) : (
                         <XCircle className="h-4 w-4" />
                     )}
-                    Bonus: {employe.upping_salary ? "Yes" : "No"}
+                    {i18n.t("bonus")}: {employe.upping_salary ? i18n.t("yes") : i18n.t("no")}
                 </p>
             </div>
             <div className="flex flex-row gap-2 md:flex-col">
@@ -51,7 +53,7 @@ function renderEmployeeCard(employe, delEmploye, upSalary) {
                 >
                     <span className="inline-flex items-center gap-1.5">
                         <Gift className="h-4 w-4" />
-                        {employe.upping_salary ? "Remove Bonus" : "Give Bonus"}
+                        {employe.upping_salary ? i18n.t("remove_bonus") : i18n.t("give_bonus")}
                     </span>
                 </button>
                 <button
@@ -60,7 +62,7 @@ function renderEmployeeCard(employe, delEmploye, upSalary) {
                 >
                     <span className="inline-flex items-center gap-1.5">
                         <Trash2 className="h-4 w-4" />
-                        Delete
+                        {i18n.t("delete")}
                     </span>
                 </button>
             </div>

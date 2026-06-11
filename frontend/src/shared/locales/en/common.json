@@ -17,5 +17,11 @@
     "id": "ID",
     "name": "Name",
     "salary": "Salary",
-    "salaryIncreaseStatus": "Salary increase status"
+    "salaryIncreaseStatus": "Salary increase status",
+    "bonus": "Bonus",
+    "yes": "Yes",
+    "no": "No",
+    "remove_bonus": "Remove Bonus",
+    "give_bonus": "Give Bonus",
+    "delete": "Delete"
 }

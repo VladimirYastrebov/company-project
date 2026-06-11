@@ -17,5 +17,11 @@
     "id": "ID",
     "name": "Имя",
     "salary": "Зарплата",
-    "salaryIncreaseStatus": "Статус повышения зарплаты"
+    "salaryIncreaseStatus": "Статус повышения зарплаты",
+    "bonus": "Бонус",
+    "yes": "Да",
+    "no": "Нет",
+    "remove_bonus": "Удалить Бонус",
+    "give_bonus": "Выдать Бонус",
+    "delete": "Удалить"
 }
