@@ -23,5 +23,9 @@
     "no": "Нет",
     "remove_bonus": "Удалить Бонус",
     "give_bonus": "Выдать Бонус",
-    "delete": "Удалить"
+    "delete": "Удалить",
+    "search_employees": "Поиск сотрудников...",
+    "all_employees": "Все сотрудники",
+    "with_bonus": "С бонусом",
+    "salary_greater_than": "Зарплата >"
 }

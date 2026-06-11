@@ -23,5 +23,9 @@
     "no": "Non",
     "remove_bonus": "Supprimer le Bonus",
     "give_bonus": "Donner un Bonus",
-    "delete": "Supprimer"
+    "delete": "Supprimer",
+    "search_employees": "Rechercher des employés...",
+    "all_employees": "Tous les employés",
+    "with_bonus": "Avec Bonus",
+    "salary_greater_than": "Salaire >"
 }

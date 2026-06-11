@@ -23,5 +23,9 @@
     "no": "No",
     "remove_bonus": "Eliminar Bono",
     "give_bonus": "Dar Bono",
-    "delete": "Eliminar"
+    "delete": "Eliminar",
+    "search_employees": "Buscar empleados...",
+    "all_employees": "Todos los empleados",
+    "with_bonus": "Con Bono",
+    "salary_greater_than": "Salario >"
 }

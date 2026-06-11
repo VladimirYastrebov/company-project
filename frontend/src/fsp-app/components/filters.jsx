@@ -1,4 +1,6 @@
 import { Search } from "lucide-react";
+import "../shared/i18n";
+import i18n from "../shared/i18n";
 
 export const Filters = ({ filter, inputValue, activeFilter }) => {
   const handleChange = (event) => {
@@ -23,7 +25,7 @@ export const Filters = ({ filter, inputValue, activeFilter }) => {
         <input
           type="text"
           name="searchEmploeye"
-          placeholder="Search employees..."
+          placeholder={i18n.t("search_employees")}
           className="w-full rounded-lg border border-blue-900/70 bg-slate-950 py-3 pl-11 pr-4 text-slate-100 outline-none placeholder:text-slate-500 focus:border-blue-500"
           onChange={handleChange}
         />
@@ -35,7 +37,7 @@ export const Filters = ({ filter, inputValue, activeFilter }) => {
             filter(1);
           }}
         >
-          All Employees
+          {i18n.t("all_employees")}
         </button>
         <button
           className={getButtonClass(2)}
@@ -43,7 +45,7 @@ export const Filters = ({ filter, inputValue, activeFilter }) => {
             filter(2);
           }}
         >
-          With Bonus
+          {i18n.t("with_bonus")}
         </button>
         <button
           className={getButtonClass(3)}
@@ -51,7 +53,7 @@ export const Filters = ({ filter, inputValue, activeFilter }) => {
             filter(3);
           }}
         >
-          Salary {">"} $1000
+          {i18n.t("salary_greater_than")} $1000
         </button>
       </div>
     </div>

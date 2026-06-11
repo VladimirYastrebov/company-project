@@ -23,5 +23,9 @@
     "no": "No",
     "remove_bonus": "Remove Bonus",
     "give_bonus": "Give Bonus",
-    "delete": "Delete"
+    "delete": "Delete",
+    "search_employees": "Search employees...",
+    "all_employees": "All Employees",
+    "with_bonus": "With Bonus",
+    "salary_greater_than": "Salary >"
 }
