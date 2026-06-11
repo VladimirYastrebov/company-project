@@ -30,5 +30,11 @@
     "salary_greater_than": "Salary >",
     "all_employees_message": "All registered employees",
     "with_bonus_message": "Received a bonus",
-    "salary_greater_than_message": "High salary employees"
+    "salary_greater_than_message": "High salary employees",
+    "addNewEmployee": "Add New Employee",
+    "employeeAddedSuccessfully": "Employee added successfully!",
+    "errorAddingEmployee": "Error adding employee.",
+    "addEmployee": "Add Employee",
+    "enterEmployeeName": "Enter employee name",
+    "enterEmployeeSalary": "Enter employee salary"
 }

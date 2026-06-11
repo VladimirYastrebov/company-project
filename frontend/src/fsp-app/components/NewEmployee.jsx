@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { FSP_API } from "../index.js";
 import { Plus } from "lucide-react";
+import "../shared/i18n";
+import i18n from "../shared/i18n";
 
 export const NewEmployee = ({ addNewEmployee }) => {
     const [message, setMessage] = useState("");
@@ -22,11 +24,11 @@ export const NewEmployee = ({ addNewEmployee }) => {
 
         try {
             const response = await axios.post(FSP_API, newEmploye);
-            setMessage("Employee added successfully!");
+            setMessage(i18n.t("employeeAddedSuccessfully"));
             addNewEmployee(response.data);
         } catch (error) {
             console.error(error);
-            setMessage("Error adding employee.");
+            setMessage(i18n.t("errorAddingEmployee"));
         }
 
         event.target.reset();
@@ -34,21 +36,21 @@ export const NewEmployee = ({ addNewEmployee }) => {
 
     return (
         <section className="mt-4 rounded-xl border border-indigo-300/20 bg-slate-900/90 p-4">
-            <h2 className="mb-3 text-2xl font-bold text-slate-100">Add New Employee</h2>
+            <h2 className="mb-3 text-2xl font-bold text-slate-100">{i18n.t("addNewEmployee")}</h2>
             {message && <p className="mb-2 text-blue-300">{message}</p>}
             <form onSubmit={handleAddNewEmployee} className="grid gap-2.5 md:grid-cols-[1fr_1fr_auto]">
                 <input
                     className="rounded-lg border border-blue-900/70 bg-slate-950 px-4 py-3 text-slate-100 outline-none placeholder:text-slate-500 focus:border-blue-500"
                     type="text"
                     name="nameOfNewEmployee"
-                    placeholder="Enter employee name"
+                    placeholder={i18n.t("enterEmployeeName")}
                     required
                 />
                 <input
                     className="rounded-lg border border-blue-900/70 bg-slate-950 px-4 py-3 text-slate-100 outline-none placeholder:text-slate-500 focus:border-blue-500"
                     type="number"
                     name="salaryOfNewEmployee"
-                    placeholder="Enter salary"
+                    placeholder={i18n.t("enterEmployeeSalary")}
                     required
                 />
                 <button
@@ -57,7 +59,7 @@ export const NewEmployee = ({ addNewEmployee }) => {
                 >
                     <span className="inline-flex items-center gap-1.5">
                         <Plus className="h-4 w-4" />
-                        Add Employee
+                        {i18n.t("addEmployee")}
                     </span>
                 </button>
             </form>

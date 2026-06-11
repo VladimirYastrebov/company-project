@@ -30,5 +30,11 @@
     "salary_greater_than": "Зарплата >",
     "all_employees_message": "Все зарегистрированные сотрудники",
     "with_bonus_message": "Получили бонус",
-    "salary_greater_than_message": "Сотрудники с высокой зарплатой"
+    "salary_greater_than_message": "Сотрудники с высокой зарплатой",
+    "addNewEmployee": "Добавить нового сотрудника",
+    "employeeAddedSuccessfully": "Сотрудник успешно добавлен!",
+    "errorAddingEmployee": "Ошибка при добавлении сотрудника.",
+    "addEmployee": "Добавить Сотрудника",
+    "enterEmployeeName": "Введите имя сотрудника",
+    "enterEmployeeSalary": "Введите зарплату сотрудника"
 }

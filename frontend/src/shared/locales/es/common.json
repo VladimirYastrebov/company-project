@@ -30,5 +30,11 @@
     "salary_greater_than": "Salario >",
     "all_employees_message": "Todos los empleados registrados",
     "with_bonus_message": "Recibieron un bono",
-    "salary_greater_than_message": "Empleados con salario alto"
+    "salary_greater_than_message": "Empleados con salario alto",
+    "addNewEmployee": "Agregar Nuevo Empleado",
+    "employeeAddedSuccessfully": "¡Empleado agregado exitosamente!",
+    "errorAddingEmployee": "Error al agregar empleado.",
+    "addEmployee": "Agregar Empleado",
+    "enterEmployeeName": "Ingrese el nombre del empleado",
+    "enterEmployeeSalary": "Ingrese el salario del empleado"
 }
