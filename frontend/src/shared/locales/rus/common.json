@@ -27,5 +27,8 @@
     "search_employees": "Поиск сотрудников...",
     "all_employees": "Все сотрудники",
     "with_bonus": "С бонусом",
-    "salary_greater_than": "Зарплата >"
+    "salary_greater_than": "Зарплата >",
+    "all_employees_message": "Все зарегистрированные сотрудники",
+    "with_bonus_message": "Получили бонус",
+    "salary_greater_than_message": "Сотрудники с высокой зарплатой"
 }

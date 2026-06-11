@@ -27,5 +27,8 @@
     "search_employees": "Search employees...",
     "all_employees": "All Employees",
     "with_bonus": "With Bonus",
-    "salary_greater_than": "Salary >"
+    "salary_greater_than": "Salary >",
+    "all_employees_message": "All registered employees",
+    "with_bonus_message": "Received a bonus",
+    "salary_greater_than_message": "High salary employees"
 }

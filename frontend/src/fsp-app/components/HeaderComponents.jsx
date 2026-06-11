@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { Calendar, Clock, DollarSign, Gift, Users } from "lucide-react";
+import "../shared/i18n";
+import i18n from "../shared/i18n";
+
 export const HeaderComponents = ({ everythingWeNeed }) => {
     const allEmployes = everythingWeNeed.everyone;
     const toHigherSalary = everythingWeNeed.salary;
@@ -93,7 +96,7 @@ export const HeaderComponents = ({ everythingWeNeed }) => {
                         <Users className="h-5 w-5 text-blue-300" />
                     </div>
                     <h1 className="m-0 text-2xl font-bold leading-tight text-slate-100 md:text-4xl">
-                        SMTH Employee Manager
+                        {i18n.t("employeeManager")}
                     </h1>
                 </div>
                 <div className="text-left text-slate-400 md:text-right">
@@ -111,26 +114,28 @@ export const HeaderComponents = ({ everythingWeNeed }) => {
                 <div className="rounded-xl border border-indigo-300/20 bg-linear-to-br from-blue-950/70 to-slate-900/90 p-4">
                     <p className="m-0 inline-flex items-center gap-1.5 text-slate-400">
                         <Users className="h-4 w-4 text-blue-300" />
-                        Total Employees
+                        {i18n.t("all_employees")}
                     </p>
                     <p className="my-1 text-3xl font-bold text-slate-100">{countOfAll}</p>
-                    <p className="m-0 text-sm text-slate-500">All registered employees</p>
+                    <p className="m-0 text-sm text-slate-500">{i18n.t("all_employees_message")}</p>
                 </div>
                 <div className="rounded-xl border border-indigo-300/20 bg-linear-to-br from-blue-950/70 to-slate-900/90 p-4">
                     <p className="m-0 inline-flex items-center gap-1.5 text-slate-400">
                         <Gift className="h-4 w-4 text-emerald-300" />
-                        Employees with Bonus
+                        {i18n.t("with_bonus")}
                     </p>
-                    <p className="my-1 text-3xl font-bold text-emerald-400">{countOfHigherPaymaent}</p>
-                    <p className="m-0 text-sm text-slate-500">Received a bonus</p>
+                    <p className="my-1 text-3xl font-bold text-emerald-400">
+                        {countOfHigherPaymaent}
+                    </p>
+                    <p className="m-0 text-sm text-slate-500">{i18n.t("with_bonus_message")}</p>
                 </div>
                 <div className="rounded-xl border border-indigo-300/20 bg-linear-to-br from-blue-950/70 to-slate-900/90 p-4">
                     <p className="m-0 inline-flex items-center gap-1.5 text-slate-400">
                         <DollarSign className="h-4 w-4 text-blue-300" />
-                        Salary {">"} $1000
+                        {i18n.t("salary_greater_than")} $1000
                     </p>
                     <p className="my-1 text-3xl font-bold text-blue-400">{countOverThousand}</p>
-                    <p className="m-0 text-sm text-slate-500">High salary employees</p>
+                    <p className="m-0 text-sm text-slate-500">{i18n.t("salary_greater_than_message")}</p>
                 </div>
             </div>
         </div>
