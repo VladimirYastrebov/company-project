@@ -36,5 +36,7 @@
     "errorAddingEmployee": "Erreur lors de l'ajout de l'employé.",
     "addEmployee": "Ajouter un Employé",
     "enterEmployeeName": "Entrez le nom de l'employé",
-    "enterEmployeeSalary": "Entrez le salaire de l'employé"
+    "enterEmployeeSalary": "Entrez le salaire de l'employé",
+    "employeeList": "liste des employés",
+    "noEmployeesFoundFilter": "Aucun employé trouvé pour ce filtre."
 }

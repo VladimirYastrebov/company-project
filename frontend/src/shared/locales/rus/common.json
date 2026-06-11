@@ -36,5 +36,7 @@
     "errorAddingEmployee": "Ошибка при добавлении сотрудника.",
     "addEmployee": "Добавить Сотрудника",
     "enterEmployeeName": "Введите имя сотрудника",
-    "enterEmployeeSalary": "Введите зарплату сотрудника"
+    "enterEmployeeSalary": "Введите зарплату сотрудника",
+    "employeeList": "Список Сотрудников",
+    "noEmployeesFoundFilter": "Сотрудники, соответствующие данному фильтру, не найдены."
 }

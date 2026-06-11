@@ -102,15 +102,15 @@ export const AllWorkers = ({
     if (!employees.length) {
         return (
             <section className="mt-4 rounded-xl border border-indigo-300/20 bg-slate-900/90 p-4">
-                <h2 className="mb-3 text-2xl font-bold text-slate-100">Employee List</h2>
-                <p className="m-0 text-slate-400">No employees found for this filter.</p>
+                <h2 className="mb-3 text-2xl font-bold text-slate-100">{i18n.t("employeeList")}</h2>
+                <p className="m-0 text-slate-400">{i18n.t("noEmployeesFoundFilter")}</p>
             </section>
         );
     }
 
     return (
         <section className="mt-4 rounded-xl border border-indigo-300/20 bg-slate-900/90 p-4">
-            <h2 className="mb-3 text-2xl font-bold text-slate-100">Employee List</h2>
+            <h2 className="mb-3 text-2xl font-bold text-slate-100">{i18n.t("employeeList")}</h2>
             <div className="flex flex-col gap-3">
                 {employees.map((item) => renderEmployeeCard(item, delWorker, addSalary))}
             </div>

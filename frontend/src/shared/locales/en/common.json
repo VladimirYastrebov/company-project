@@ -36,5 +36,7 @@
     "errorAddingEmployee": "Error adding employee.",
     "addEmployee": "Add Employee",
     "enterEmployeeName": "Enter employee name",
-    "enterEmployeeSalary": "Enter employee salary"
+    "enterEmployeeSalary": "Enter employee salary",
+    "employeeList": "Employee List",
+    "noEmployeesFoundFilter": "No employees found for this filter."
 }
