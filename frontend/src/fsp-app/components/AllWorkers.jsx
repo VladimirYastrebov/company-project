@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, DollarSign, Gift, Trash2, User, XCircle } from "lucide-react";
-import "../shared/i18n";
-import i18n from "../shared/i18n";
+import "../../shared/i18n";
+import i18n from "../../shared/i18n";
 
 function renderEmployeeCard(employe, delEmploye, upSalary) {
     const salaryValue = Number(employe.salary);

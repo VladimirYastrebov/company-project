@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Calendar, Clock, DollarSign, Gift, Users } from "lucide-react";
-import "../shared/i18n";
-import i18n from "../shared/i18n";
+import "../../shared/i18n";
+import i18n from "../../shared/i18n";
 
 export const HeaderComponents = ({ everythingWeNeed }) => {
     const allEmployes = everythingWeNeed.everyone;

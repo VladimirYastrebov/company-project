@@ -5,8 +5,8 @@ import { NewEmployee } from "../../components/NewEmployee.jsx";
 import getBackendData, { FSP_API } from "../../index.js";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "../shared/i18n";
-import i18n from "../shared/i18n";
+import "../../../shared/i18n.js";
+import i18n from "../../../shared/i18n";
 
 export const HomePage = () => {
     const [allEmployesState, setEmployes] = useState([]);

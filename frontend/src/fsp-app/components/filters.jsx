@@ -1,6 +1,6 @@
 import { Search } from "lucide-react";
-import "../shared/i18n";
-import i18n from "../shared/i18n";
+import "../../shared/i18n";
+import i18n from "../../shared/i18n";
 
 export const Filters = ({ filter, inputValue, activeFilter }) => {
   const handleChange = (event) => {

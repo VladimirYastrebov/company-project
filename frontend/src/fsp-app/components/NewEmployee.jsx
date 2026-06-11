@@ -2,8 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { FSP_API } from "../index.js";
 import { Plus } from "lucide-react";
-import "../shared/i18n";
-import i18n from "../shared/i18n";
+import "../../shared/i18n";
+import i18n from "../../shared/i18n";
 
 export const NewEmployee = ({ addNewEmployee }) => {
     const [message, setMessage] = useState("");

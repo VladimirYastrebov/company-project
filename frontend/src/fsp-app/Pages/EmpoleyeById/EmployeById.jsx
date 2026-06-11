@@ -14,8 +14,8 @@ import {
     CheckCircle,
     XCircle,
 } from "lucide-react";
-import "../shared/i18n";
-import i18n from "../shared/i18n";
+import "../../../shared/i18n.js";
+import i18n from "../../../shared/i18n";
 
 export const EmployeById = () => {
     const { id } = useParams();
